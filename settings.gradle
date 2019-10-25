@@ -1,0 +1,2 @@
+include ':app', ':simplelicensedisplay'
+rootProject.name='Simple License Display Example'
