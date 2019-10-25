@@ -10,13 +10,16 @@ The view is based on the [MaterialCardView](https://material.io/develop/android/
 ### Attributes
 * `sldTitle` - Title of the card, typically the name of the library 
   * `sldTitleMaxLines` - Max lines the title can span 
-  * `sldTitleEllipsize` - Style for the ellipsize (either `end` or `middle` leaving it unset will show no ellipsize)
+  * `sldTitleEllipsize` - Style of the ellipsize (either `end` or `middle` leaving it unset will show no ellipsize)
+  * `sldTitleTextAppearance` - TextAppearance Style to apply to the title TextView
 * `sldDescription` - Description section, typically a brief description of where and why the library is used 
   * `sldDescriptionMaxLines` - Max lines the description can span 
-  * `sldDescriptionEllipsize` - Style for the ellipsize (either `end` or `middle` leaving it unset will show no ellipsize)
+  * `sldDescriptionEllipsize` - Style of the ellipsize (either `end` or `middle` leaving it unset will show no ellipsize)
+  * `sldDescriptionTextAppearance` - TextAppearance Style to apply to the description TextView
 * `sldLicense` - License section, put the shortened name of the license used here (e.g. MIT License, Apache 2.0 License etc...)
   * `sldLicenseMaxLines` - Max lines the license can span 
-  * `sldLicenseEllipsize` - Style for the ellipsize (either `end` or `middle` leaving it unset will show no ellipsize)
+  * `sldLicenseEllipsize` - Style of the ellipsize (either `end` or `middle` leaving it unset will show no ellipsize)
+  * `sldLicenseTextAppearance` - TextAppearance Style to apply to the license TextView
 
 ### Example
 ```xml
