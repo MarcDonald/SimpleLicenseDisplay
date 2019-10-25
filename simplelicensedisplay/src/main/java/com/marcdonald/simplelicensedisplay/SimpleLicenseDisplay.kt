@@ -23,47 +23,97 @@
 package com.marcdonald.simplelicensedisplay
 
 import android.content.Context
+import android.content.res.TypedArray
+import android.text.TextUtils
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.TextView
 import com.google.android.material.card.MaterialCardView
 
 class SimpleLicenseDisplay(context: Context, attributeSet: AttributeSet?, defStyle: Int) :
-    MaterialCardView(context, attributeSet, defStyle) {
+		MaterialCardView(context, attributeSet, defStyle) {
 
-    private var titleText: TextView
-    private var descriptionText: TextView
-    private var licenseText: TextView
+	private var titleText: TextView
+	private var descriptionText: TextView
+	private var licenseText: TextView
 
-    init {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val view = inflater.inflate(R.layout.view_license, this, true)
-        titleText = view.findViewById(R.id.txt_license_title)
-        descriptionText = view.findViewById(R.id.txt_license_description)
-        licenseText = view.findViewById(R.id.txt_license_license)
+	init {
+		val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+		val view = inflater.inflate(R.layout.view_license, this, true)
+		titleText = view.findViewById(R.id.txt_license_title)
+		descriptionText = view.findViewById(R.id.txt_license_description)
+		licenseText = view.findViewById(R.id.txt_license_license)
 
-        if (attributeSet != null) {
-            val attributes = context.obtainStyledAttributes(
-                attributeSet,
-                R.styleable.SimpleLicenseDisplay,
-                defStyle,
-                0
-            )
+		if(attributeSet != null) {
+			val attributes = context.obtainStyledAttributes(
+				attributeSet,
+				R.styleable.SimpleLicenseDisplay,
+				defStyle,
+				0
+			)
 
-            val title = attributes.getString(R.styleable.SimpleLicenseDisplay_sldTitle)
-            titleText.text = title
+			setupTextViews(attributes)
 
-            val description = attributes.getString(R.styleable.SimpleLicenseDisplay_sldDescription)
-            descriptionText.text = description
+			val title = attributes.getString(R.styleable.SimpleLicenseDisplay_sldTitle)
+			titleText.text = title
 
-            val license = attributes.getString(R.styleable.SimpleLicenseDisplay_sldLicense)
-            licenseText.text = license
+			val description = attributes.getString(R.styleable.SimpleLicenseDisplay_sldDescription)
+			descriptionText.text = description
 
-            attributes.recycle()
-        }
-    }
+			val license = attributes.getString(R.styleable.SimpleLicenseDisplay_sldLicense)
+			licenseText.text = license
 
-    constructor(context: Context) : this(context, null)
+			attributes.recycle()
+		}
+	}
 
-    constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, 0)
+	constructor(context: Context) : this(context, null)
+
+	constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, 0)
+
+	private fun setupTextViews(attributes: TypedArray) {
+		titleText.maxLines = attributes.getInteger(
+			R.styleable.SimpleLicenseDisplay_sldTitleMaxLines,
+			titleText.maxLines
+		)
+		setEllipsize(titleText,
+			attributes.getInteger(
+				R.styleable.SimpleLicenseDisplay_sldTitleEllipsize,
+				ELLIPSIZE_NOT_SET)
+		)
+
+		descriptionText.maxLines = attributes.getInteger(
+			R.styleable.SimpleLicenseDisplay_sldDescriptionMaxLines,
+			descriptionText.maxLines
+		)
+		setEllipsize(descriptionText,
+			attributes.getInteger(
+				R.styleable.SimpleLicenseDisplay_sldDescriptionEllipsize,
+				ELLIPSIZE_NOT_SET)
+		)
+
+		licenseText.maxLines = attributes.getInteger(
+			R.styleable.SimpleLicenseDisplay_sldLicenseMaxLines,
+			licenseText.maxLines
+		)
+		setEllipsize(licenseText,
+			attributes.getInteger(
+				R.styleable.SimpleLicenseDisplay_sldLicenseEllipsize,
+				ELLIPSIZE_NOT_SET)
+		)
+	}
+
+	private fun setEllipsize(textView: TextView, ellipsize: Int) {
+		textView.ellipsize = when(ellipsize) {
+			ELLIPSIZE_END    -> TextUtils.TruncateAt.END
+			ELLIPSIZE_MIDDLE -> TextUtils.TruncateAt.MIDDLE
+			else             -> textView.ellipsize
+		}
+	}
+
+	companion object {
+		private const val ELLIPSIZE_NOT_SET = -1
+		private const val ELLIPSIZE_MIDDLE = 0
+		private const val ELLIPSIZE_END = 1
+	}
 }

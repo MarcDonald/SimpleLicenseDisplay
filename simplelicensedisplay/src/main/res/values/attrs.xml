@@ -24,7 +24,22 @@
 <resources>
   <declare-styleable name="SimpleLicenseDisplay">
     <attr name="sldTitle" format="string" />
+    <attr name="sldTitleMaxLines" format="integer" />
+    <attr name="sldTitleEllipsize" format="enum">
+      <enum name="middle" value="0" />
+      <enum name="end" value="1" />
+    </attr>
     <attr name="sldDescription" format="string" />
+    <attr name="sldDescriptionMaxLines" format="integer" />
+    <attr name="sldDescriptionEllipsize" format="enum">
+      <enum name="middle" value="0" />
+      <enum name="end" value="1" />
+    </attr>
     <attr name="sldLicense" format="string" />
+    <attr name="sldLicenseMaxLines" format="integer" />
+    <attr name="sldLicenseEllipsize" format="enum">
+      <enum name="middle" value="0" />
+      <enum name="end" value="1" />
+    </attr>
   </declare-styleable>
 </resources>

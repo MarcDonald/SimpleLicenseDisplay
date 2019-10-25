@@ -60,6 +60,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/margin_standard"
+    app:sldTitle="Another Library With a Really Really Long Name"
+    app:sldTitleMaxLines="1"
+    app:sldTitleEllipsize="middle"
+    app:sldDescription="This card uses ellipsizes to make the content a lot shorter"
+    app:sldLicense="It even has a really long license that can't be summed up in any less words, the license is so long it actually has 3 lines of text"
+    app:sldLicenseMaxLines="2"
+    app:sldLicenseEllipsize="end" />
+
+  <com.marcdonald.simplelicensedisplay.SimpleLicenseDisplay
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_standard"
     app:sldTitle="A Descriptionless Library"
     app:sldLicense="Apache 2.0 License" />
 </LinearLayout>
