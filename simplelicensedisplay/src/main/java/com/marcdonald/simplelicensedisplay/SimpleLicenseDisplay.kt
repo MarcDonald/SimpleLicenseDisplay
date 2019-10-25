@@ -27,6 +27,7 @@ import android.content.res.TypedArray
 import android.text.TextUtils
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import android.view.View
 import android.widget.TextView
 import com.google.android.material.card.MaterialCardView
 
@@ -55,13 +56,13 @@ class SimpleLicenseDisplay(context: Context, attributeSet: AttributeSet?, defSty
 			setupTextViews(attributes)
 
 			val title = attributes.getString(R.styleable.SimpleLicenseDisplay_sldTitle)
-			titleText.text = title
+			if(title.isNullOrBlank()) titleText.visibility = View.GONE else titleText.text = title
 
 			val description = attributes.getString(R.styleable.SimpleLicenseDisplay_sldDescription)
-			descriptionText.text = description
+			if(description.isNullOrBlank()) descriptionText.visibility = View.GONE else descriptionText.text = description
 
 			val license = attributes.getString(R.styleable.SimpleLicenseDisplay_sldLicense)
-			licenseText.text = license
+			if(license.isNullOrBlank()) licenseText.visibility = View.GONE else licenseText.text = license
 
 			attributes.recycle()
 		}
