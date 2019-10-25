@@ -1,4 +1,4 @@
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (c) 2019 Marc Donald
   ~
   ~ The MIT License (MIT)
@@ -22,8 +22,6 @@
   -->
 
 <resources>
-    <string name="app_name">Simple License Display</string>
-  <string name="title">Title</string>
-  <string name="description">Description</string>
-  <string name="license">License</string>
+  <dimen name="margin_standard">8dp</dimen>
+  <dimen name="margin_half">4dp</dimen>
 </resources>
