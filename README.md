@@ -1,6 +1,30 @@
 # Simple License Display
 A very simple card view for displaying open source library license information
 
+## How to Use
+### Styling
+The view is based on the [MaterialCardView](https://material.io/develop/android/components/material-card-view/) and can be styled the same way. 
+
+### Attributes
+* `sldTitle` - Title of the card, typically the name of the library 
+* `sldDescription` - Description section, typically a brief description of where and why the library is used 
+* `sldLicense` - License section, put the shortened name of the license used here (e.g. MIT License, Apache 2.0 License etc...)
+
+### Example
+```xml
+  <com.marcdonald.simplelicensedisplay.SimpleLicenseDisplay
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:sldTitle="Simple License Display"
+    app:sldDescription="This is a simple license display"
+    app:sldLicense="MIT License" />
+```
+
+For more information see the example project.
+
+## Screenshots
+<img src=".github/assets/readme-screenshot.png" alt="Screenshot" width="350">
+
 ## Download
 [Click Here to Go To the Latest Release](https://github.com/MarcDonald/SimpleLicenseDisplay/releases/latest)
 
