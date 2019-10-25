@@ -55,4 +55,11 @@
     app:sldTitle="A Library With a Really Really Long Name"
     app:sldDescription="This library has a really really long name and description to show what it would look like"
     app:sldLicense="It even has a really long license that can't be summed up in any less words" />
+
+  <com.marcdonald.simplelicensedisplay.SimpleLicenseDisplay
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_standard"
+    app:sldTitle="A Descriptionless Library"
+    app:sldLicense="Apache 2.0 License" />
 </LinearLayout>
