@@ -64,6 +64,10 @@ class SimpleLicenseDisplay(context: Context, attributeSet: AttributeSet?, defSty
 			val license = attributes.getString(R.styleable.SimpleLicenseDisplay_sldLicense)
 			if(license.isNullOrBlank()) licenseText.visibility = View.GONE else licenseText.text = license
 
+			titleText.setTextAppearance(attributes.getResourceId(R.styleable.SimpleLicenseDisplay_sldTitleTextAppearance, R.style.TextAppearance_SimpleLicenseDisplay_Title))
+			descriptionText.setTextAppearance(attributes.getResourceId(R.styleable.SimpleLicenseDisplay_sldDescriptionTextAppearance, R.style.TextAppearance_SimpleLicenseDisplay_Description))
+			licenseText.setTextAppearance(attributes.getResourceId(R.styleable.SimpleLicenseDisplay_sldLicenseTextAppearance, R.style.TextAppearance_SimpleLicenseDisplay_License))
+
 			attributes.recycle()
 		}
 	}

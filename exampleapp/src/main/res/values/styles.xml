@@ -22,10 +22,22 @@
   -->
 
 <resources>
-
   <style name="AppTheme" parent="Theme.AppCompat.Light">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="DifferentTitleTextAppearance" parent="TextAppearance.SimpleLicenseDisplay.Title">
+    <item name="fontFamily">serif-monospace</item>
+  </style>
+
+  <style name="DifferentDescriptionTextAppearance" parent="TextAppearance.SimpleLicenseDisplay.Description">
+    <item name="android:textColor">@color/colorAccent</item>
+  </style>
+
+  <style name="DifferentLicenseTextAppearance" parent="TextAppearance.SimpleLicenseDisplay.License">
+    <item name="android:textSize">18sp</item>
+    <item name="fontFamily">cursive</item>
+  </style>
 </resources>
