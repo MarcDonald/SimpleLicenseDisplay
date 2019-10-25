@@ -93,6 +93,15 @@
         android:layout_margin="@dimen/margin_standard"
         app:sldTitle="A Descriptionless Library"
         app:sldLicense="Apache 2.0 License" />
+
+      <com.marcdonald.simplelicensedisplay.SimpleLicenseDisplay
+        android:id="@+id/library_clickable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_standard"
+        app:sldTitle="A Clickable Library"
+        app:sldLicense="Apache 2.0 License"
+        app:sldDescription="This library is clickable" />
     </LinearLayout>
   </androidx.core.widget.NestedScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
