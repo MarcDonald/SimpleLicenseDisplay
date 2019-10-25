@@ -23,7 +23,7 @@ The view is based on the [MaterialCardView](https://material.io/develop/android/
 For more information see the example project.
 
 ## Screenshots
-![Screenshots](/.github/assets/readme-screenshot.png?raw=true)
+<img src=".github/assets/readme-screenshot.png" alt="Screenshot" width="350">
 
 ## Download
 [Click Here to Go To the Latest Release](https://github.com/MarcDonald/SimpleLicenseDisplay/releases/latest)
