@@ -1,5 +1,8 @@
 # Simple License Display
+[![](https://jitpack.io/v/marcdonald/simplelicensedisplay.svg)](https://jitpack.io/#marcdonald/simplelicensedisplay)
+
 A very simple card view for displaying open source library license information
+
 
 <img src=".github/assets/readme-screenshot.png" alt="Screenshot" width="350">
 
@@ -23,18 +26,30 @@ The view is based on the [MaterialCardView](https://material.io/develop/android/
 
 ### Example
 ```xml
-  <com.marcdonald.simplelicensedisplay.SimpleLicenseDisplay
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:sldTitle="Simple License Display"
-    app:sldDescription="This is a simple license display"
-    app:sldLicense="MIT License" />
+<com.marcdonald.simplelicensedisplay.SimpleLicenseDisplay
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  app:sldTitle="Simple License Display"
+  app:sldDescription="This is a simple license display"
+  app:sldLicense="MIT License" />
 ```
 
 For more information see the example project.
 
-## Download
-[Click Here to Go To the Latest Release](https://github.com/MarcDonald/SimpleLicenseDisplay/releases/latest)
+## Download and Use in Your App
+[![](https://jitpack.io/v/marcdonald/simplelicensedisplay.svg)](https://jitpack.io/#marcdonald/simplelicensedisplay)
+
+`implementation 'com.github.marcdonald:simplelicensedisplay:RELEASE-NUMBER'`
+
+Ensure the Jitpack repository is included in your root build.gradle like so
+```
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
 
 ## License
 ```
