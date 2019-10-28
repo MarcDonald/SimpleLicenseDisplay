@@ -37,9 +37,9 @@ The view is based on the [MaterialCardView](https://material.io/develop/android/
 For more information see the example project.
 
 ## Download and Use in Your App
-[![](https://jitpack.io/v/marcdonald/simplelicensedisplay.svg)](https://jitpack.io/#marcdonald/simplelicensedisplay)
+[![](https://jitpack.io/v/com.marcdonald/simplelicensedisplay.svg)](https://jitpack.io/#com.marcdonald/simplelicensedisplay)
 
-`implementation 'com.github.marcdonald:simplelicensedisplay:RELEASE-NUMBER'`
+`implementation 'com.marcdonald:simplelicensedisplay:RELEASE-NUMBER'`
 
 Ensure the Jitpack repository is included in your root build.gradle like so
 ```
