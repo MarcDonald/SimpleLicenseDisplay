@@ -1,14 +1,25 @@
 # Simple License Display
 A very simple card view for displaying open source library license information
 
+<img src=".github/assets/readme-screenshot.png" alt="Screenshot" width="350">
+
 ## How to Use
 ### Styling
 The view is based on the [MaterialCardView](https://material.io/develop/android/components/material-card-view/) and can be styled the same way. 
 
 ### Attributes
 * `sldTitle` - Title of the card, typically the name of the library 
+  * `sldTitleMaxLines` - Max lines the title can span 
+  * `sldTitleEllipsize` - Style of the ellipsize (either `end` or `middle` leaving it unset will show no ellipsize)
+  * `sldTitleTextAppearance` - TextAppearance Style to apply to the title TextView
 * `sldDescription` - Description section, typically a brief description of where and why the library is used 
+  * `sldDescriptionMaxLines` - Max lines the description can span 
+  * `sldDescriptionEllipsize` - Style of the ellipsize (either `end` or `middle` leaving it unset will show no ellipsize)
+  * `sldDescriptionTextAppearance` - TextAppearance Style to apply to the description TextView
 * `sldLicense` - License section, put the shortened name of the license used here (e.g. MIT License, Apache 2.0 License etc...)
+  * `sldLicenseMaxLines` - Max lines the license can span 
+  * `sldLicenseEllipsize` - Style of the ellipsize (either `end` or `middle` leaving it unset will show no ellipsize)
+  * `sldLicenseTextAppearance` - TextAppearance Style to apply to the license TextView
 
 ### Example
 ```xml
@@ -21,9 +32,6 @@ The view is based on the [MaterialCardView](https://material.io/develop/android/
 ```
 
 For more information see the example project.
-
-## Screenshots
-<img src=".github/assets/readme-screenshot.png" alt="Screenshot" width="350">
 
 ## Download
 [Click Here to Go To the Latest Release](https://github.com/MarcDonald/SimpleLicenseDisplay/releases/latest)

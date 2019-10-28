@@ -25,11 +25,17 @@ package com.marcdonald.simplelicensedisplayexample
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
+import com.marcdonald.simplelicensedisplay.SimpleLicenseDisplay
 
 class MainActivity : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		setContentView(R.layout.activity_main)
+
+		findViewById<SimpleLicenseDisplay>(R.id.library_clickable).setOnClickListener {
+			Snackbar.make(it, "The Library was Clicked!", Snackbar.LENGTH_SHORT).show()
+		}
+	}
 }

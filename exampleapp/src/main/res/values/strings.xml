@@ -22,5 +22,5 @@
   -->
 
 <resources>
-    <string name="app_name">Simple License Display Example</string>
+	<string name="app_name">Simple License Display Example</string>
 </resources>
