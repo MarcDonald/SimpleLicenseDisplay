@@ -22,6 +22,6 @@
   -->
 
 <resources>
-  <dimen name="margin_standard">8dp</dimen>
-  <dimen name="margin_half">4dp</dimen>
+  <dimen name="sld_margin_standard">8dp</dimen>
+  <dimen name="sld_margin_half">4dp</dimen>
 </resources>

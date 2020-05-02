@@ -30,15 +30,15 @@
 		<item name="android:windowLightStatusBar">true</item>
 	</style>
 
-	<style name="DifferentTitleTextAppearance" parent="TextAppearance.SimpleLicenseDisplay.Title">
+	<style name="DifferentTitleTextAppearance" parent="SldTextAppearance.SimpleLicenseDisplay.Title">
 		<item name="fontFamily">serif-monospace</item>
 	</style>
 
-	<style name="DifferentDescriptionTextAppearance" parent="TextAppearance.SimpleLicenseDisplay.Description">
+	<style name="DifferentDescriptionTextAppearance" parent="SldTextAppearance.SimpleLicenseDisplay.Description">
 		<item name="android:textColor">@color/colorAccent</item>
 	</style>
 
-	<style name="DifferentLicenseTextAppearance" parent="TextAppearance.SimpleLicenseDisplay.License">
+	<style name="DifferentLicenseTextAppearance" parent="SldTextAppearance.SimpleLicenseDisplay.License">
 		<item name="android:textSize">18sp</item>
 		<item name="fontFamily">cursive</item>
 	</style>

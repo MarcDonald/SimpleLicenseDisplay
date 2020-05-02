@@ -23,14 +23,14 @@
 
 <resources>
 
-  <style name="TextAppearance.SimpleLicenseDisplay.Title" parent="TextAppearance.MaterialComponents.Body1">
+  <style name="SldTextAppearance.SimpleLicenseDisplay.Title" parent="TextAppearance.MaterialComponents.Body1">
     <item name="android:textColor">@android:color/black</item>
     <item name="android:textAllCaps">false</item>
     <item name="android:textSize">24sp</item>
     <item name="android:letterSpacing">0</item>
   </style>
 
-  <style name="TextAppearance.SimpleLicenseDisplay.Description" parent="TextAppearance.MaterialComponents.Body1">
+  <style name="SldTextAppearance.SimpleLicenseDisplay.Description" parent="TextAppearance.MaterialComponents.Body1">
     <item name="android:textColor">@android:color/black</item>
     <item name="android:textStyle">normal</item>
     <item name="android:textAllCaps">false</item>
@@ -38,7 +38,7 @@
     <item name="android:letterSpacing">0.03125</item>
   </style>
 
-  <style name="TextAppearance.SimpleLicenseDisplay.License" parent="TextAppearance.MaterialComponents.Body1">
+  <style name="SldTextAppearance.SimpleLicenseDisplay.License" parent="TextAppearance.MaterialComponents.Body1">
     <item name="android:textStyle">italic</item>
     <item name="android:textColor">@android:color/black</item>
     <item name="android:textAllCaps">false</item>

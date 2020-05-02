@@ -22,7 +22,7 @@
   -->
 
 <resources>
-  <string name="title">Title</string>
-  <string name="description">Description</string>
-  <string name="license">License</string>
+  <string name="sld_title">Title</string>
+  <string name="sld_description">Description</string>
+  <string name="sld_license">License</string>
 </resources>

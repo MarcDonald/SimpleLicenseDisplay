@@ -40,7 +40,7 @@ class SimpleLicenseDisplay(context: Context, attributeSet: AttributeSet?, defSty
 
 	init {
 		val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-		val view = inflater.inflate(R.layout.view_license, this, true)
+		val view = inflater.inflate(R.layout.sld_view_license, this, true)
 		titleText = view.findViewById(R.id.txt_license_title)
 		descriptionText = view.findViewById(R.id.txt_license_description)
 		licenseText = view.findViewById(R.id.txt_license_license)
@@ -64,9 +64,9 @@ class SimpleLicenseDisplay(context: Context, attributeSet: AttributeSet?, defSty
 			val license = attributes.getString(R.styleable.SimpleLicenseDisplay_sldLicense)
 			if(license.isNullOrBlank()) licenseText.visibility = View.GONE else licenseText.text = license
 
-			titleText.setTextAppearance(attributes.getResourceId(R.styleable.SimpleLicenseDisplay_sldTitleTextAppearance, R.style.TextAppearance_SimpleLicenseDisplay_Title))
-			descriptionText.setTextAppearance(attributes.getResourceId(R.styleable.SimpleLicenseDisplay_sldDescriptionTextAppearance, R.style.TextAppearance_SimpleLicenseDisplay_Description))
-			licenseText.setTextAppearance(attributes.getResourceId(R.styleable.SimpleLicenseDisplay_sldLicenseTextAppearance, R.style.TextAppearance_SimpleLicenseDisplay_License))
+			titleText.setTextAppearance(attributes.getResourceId(R.styleable.SimpleLicenseDisplay_sldTitleTextAppearance, R.style.SldTextAppearance_SimpleLicenseDisplay_Title))
+			descriptionText.setTextAppearance(attributes.getResourceId(R.styleable.SimpleLicenseDisplay_sldDescriptionTextAppearance, R.style.SldTextAppearance_SimpleLicenseDisplay_Description))
+			licenseText.setTextAppearance(attributes.getResourceId(R.styleable.SimpleLicenseDisplay_sldLicenseTextAppearance, R.style.SldTextAppearance_SimpleLicenseDisplay_License))
 
 			attributes.recycle()
 		}
