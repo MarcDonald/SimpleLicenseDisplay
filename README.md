@@ -3,7 +3,6 @@
 
 A very simple card view for displaying open source library license information
 
-
 <img src=".github/assets/readme-screenshot.png" alt="Screenshot" width="350">
 
 ## How to Use
@@ -55,7 +54,7 @@ allprojects {
 ```
 The MIT License (MIT)
 
-Copyright (c) 2019 Marc Donald
+Copyright (c) 2020 Marc Donald
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

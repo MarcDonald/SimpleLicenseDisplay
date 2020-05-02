@@ -1,4 +1,4 @@
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (c) 2020 Marc Donald
   ~
   ~ The MIT License (MIT)
@@ -22,7 +22,5 @@
   -->
 
 <resources>
-  <string name="title">Title</string>
-  <string name="description">Description</string>
-  <string name="license">License</string>
+	<public />
 </resources>
