@@ -1,5 +1,6 @@
 # Simple License Display
 [![](https://jitpack.io/v/marcdonald/simplelicensedisplay.svg)](https://jitpack.io/#marcdonald/simplelicensedisplay)
+![Maintenance](https://img.shields.io/maintenance/yes/2020)
 
 A very simple card view for displaying open source library license information
 
